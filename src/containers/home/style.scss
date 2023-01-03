@@ -8,8 +8,6 @@
 
     &__text-wrapper{
         display: flex;
-        // align-content: center;
-        // flex-direction: column;
         justify-content: center;
         h1{
             color: var(--yellow-theme-main-color);
@@ -20,7 +18,7 @@
             position: relative;
             overflow: hidden;
             white-space: nowrap;
-            animation: typingEffectAnimation 2.5s steps(30,end);
+            animation: typingEffectAnimation 2.5s steps(20,end);
         }
     }
     &__contact_me{

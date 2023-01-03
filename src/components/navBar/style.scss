@@ -11,10 +11,11 @@
     &_container{
         display: flex;
         align-items: center;
-        justify-content: space-between;
         width: 100%;
         height: inherit;
         padding: 0px 20px;
+        justify-content: space-between;
+        flex: 1;
         
         &_logo{
            color: var(--yellow-theme-main-color); 
@@ -25,6 +26,7 @@
             display: flex;
             list-style: none;
             text-align: center;
+
 
             &_item{
                line-height: 40px; 
@@ -48,9 +50,31 @@
                  text-decoration: none;
                  padding: 0.5rem;
                }
+               a{
+               button {
+                cursor: pointer;
+                padding: 10px 30px;
+                font-size: 2rem;
+                background: transparent;               
+                border: 1.5px solid var(--yellow-theme-main-color);
+                border-radius: 4px;
+                font-weight: 400;
+                color: var(--yellow-theme-main-color);
+        
+                &:hover{
+                    background: var(--yellow-theme-main-color);
+                    color: #000000;
+                }
+               }
+            }
             }
         }
     }
+}
+.last{
+     &:hover::after{
+        background: none;
+     }
 }
 
 .nav-icons{
@@ -58,21 +82,22 @@
 }
 
 @media only screen and (max-width : 768px){
+
     .navbar_container_menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        left: -110%;
         position: absolute;
         top: 80px;
+        left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
 
         &.active{
             background: #181818;
             left:0px;
-            opacity: 1;
+            opacity: 1;  
         }
 
         &_item{
@@ -89,3 +114,7 @@
         
     }
 }
+
+
+
+

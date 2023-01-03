@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import {FaBars,FaReact} from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import {HiOutlineX} from 'react-icons/hi'
 import './style.scss'
+
 const data = [
     {label : 'HOME', to : '/'},
     {label : 'ABOUT ME', to : '/about'},
     {label : 'SKILLS', to : '/skills'},
-    {label : 'RESUME', to : '/resume'}, 
-    {label : 'PROTFOLIO', to : '/protfolio'},
+    {label : 'PROJECT', to : '/project'},
     {label : 'CONTACT', to : '/contact'}, 
 ]
 
@@ -31,7 +31,14 @@ export default function Navbar() {
                   </Link>
                 </li>
             ))}
-           
+            
+              <li className='navbar_container_menu_item last' >
+                <a href="https://drive.google.com/file/d/1cGcCIxgaPzXIjRjcu09ZErU98GUzQK7f/view?usp=share_link">
+                <button>
+                  Resume
+                </button>
+                </a>
+                </li>
           </ul> 
           <div className='nav-icons' onClick={handleToggleIcon}>
              {
