@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHeaderContainer from '../../components/pageHeaderContainer'
-import {BsInfoCircleFill} from 'react-icons/bs'
+import {SiSkillshare} from 'react-icons/si'
 import { SkillaData } from './utils'
 import { Animate } from 'react-simple-animate'
 // import {AnimateKeyframes} from 'react-simple-animate/dist/animateKeyframes'
@@ -12,7 +12,7 @@ export default function Skills() {
     <section id='skills' className='skills'>
     <PageHeaderContainer
     headerText='My Skills'
-    icon ={<BsInfoCircleFill size={40} />}/>
+    icon ={<SiSkillshare size={40} />}/>
     <div className='skills__content-wrapper'>
          {
           SkillaData.map((item,i) => (

@@ -1,7 +1,7 @@
 
 import React, { useRef} from 'react'
 import PageHeaderContainer from '../../components/pageHeaderContainer'
-import {BsInfoCircleFill} from 'react-icons/bs'
+import {IoMdContact} from 'react-icons/io'
 import { Animate } from "react-simple-animate";
 import './style.scss'
 import emailjs from 'emailjs-com'
@@ -28,7 +28,7 @@ export default function Contact() {
     <section id='contact' className='contact'>
     <PageHeaderContainer
     headerText='My Contact'
-    icon ={<BsInfoCircleFill size={40} />}/>
+    icon ={<IoMdContact size={40} />}/>
      <div className="contact__content">
         <Animate
           play

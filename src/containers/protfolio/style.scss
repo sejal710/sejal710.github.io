@@ -61,17 +61,19 @@
                              white-space: nowrap;
                              animation: typingEffect 1s steps(30,end);
                         }
+                        a {
                         button {
                            cursor: pointer;
                            margin-top: 16px;
                            padding: 10px 70px; 
-                           font-size: 2rem;
                            background: transparent;
-                           color: #000;
                            border: 1.5 solid #000;
                            border-radius: 4px;
-                           font-weight: 500;
+                             font-weight: 500;
+                           font-size: 2rem;
+                              color: #000;  
                         }
+                    }
                     }
                 }
             }

@@ -3,8 +3,10 @@ import React from 'react'
 import PageHeaderContainer from '../../components/pageHeaderContainer'
 import {BsInfoCircleFill} from 'react-icons/bs'
 import { Animate } from 'react-simple-animate'
-import {DiApple,DiAndroid} from 'react-icons/di';
-import {FaDev,FaDatabase} from 'react-icons/fa'
+import {SiRedux} from 'react-icons/si';
+import {TbBrandJavascript} from 'react-icons/tb'
+import {AiFillHtml5} from 'react-icons/ai'
+import {FaReact} from 'react-icons/fa'
 import './style.scss'
 
 const persnolDetail = [
@@ -56,21 +58,20 @@ export default function About() {
            >
           <div className='about__content__servicesWrapper__innerContent' >
           <div>
-            <FaDev size={60} color='var(--yellow-theme-main-color)' />
+            <FaReact size={60} color='var(--yellow-theme-main-color)' />
            </div>
            <div>
-           <FaDatabase size={60} color='var(--yellow-theme-main-color)' />
+           <AiFillHtml5 size={60} color='var(--yellow-theme-main-color)' />
            </div>
            <div>
-           <DiApple size={60} color='var(--yellow-theme-main-color)' />
+           <SiRedux size={60} color='var(--yellow-theme-main-color)' />
            </div>
            <div>
-            <DiAndroid size={60} color='var(--yellow-theme-main-color)' />
+            <TbBrandJavascript size={60} color='var(--yellow-theme-main-color)' />
            </div>
           </div>
           </Animate>
         </div>
-
       </div>
     </section>
   )

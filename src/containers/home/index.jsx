@@ -10,6 +10,7 @@ export default function Home() {
        navigate('/contact')
   }
   return (
+    
     <section id='home' className='home'>
       <div className='home__text-wrapper'>
          <h1>
