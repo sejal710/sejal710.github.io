@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.121c552b.css",
-    "main.js": "/static/js/main.df4e2749.js",
+    "main.js": "/static/js/main.45508b69.js",
     "static/js/787.586b53ef.chunk.js": "/static/js/787.586b53ef.chunk.js",
     "static/media/Sephora.png": "/static/media/Sephora.52b3098237785dc9d53c.png",
     "static/media/Travel.png": "/static/media/Travel.b3bf47321d6625aca42a.png",
     "static/media/PharmEasy.png": "/static/media/PharmEasy.54a9a6d5d87a12c886d3.png",
     "index.html": "/index.html",
     "main.121c552b.css.map": "/static/css/main.121c552b.css.map",
-    "main.df4e2749.js.map": "/static/js/main.df4e2749.js.map",
+    "main.45508b69.js.map": "/static/js/main.45508b69.js.map",
     "787.586b53ef.chunk.js.map": "/static/js/787.586b53ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.121c552b.css",
-    "static/js/main.df4e2749.js"
+    "static/js/main.45508b69.js"
   ]
 }
