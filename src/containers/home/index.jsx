@@ -2,6 +2,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import {Animate} from 'react-simple-animate'
+import sejal from '../../Images/sejal.png'
 import './style.scss'
 
 export default function Home() {
@@ -10,11 +11,14 @@ export default function Home() {
        navigate('/contact')
   }
   return (
-    
+    <div className='Home-head'>
+          <div className='image'>
+             <img  src={sejal} alt='Sejal' />
+        </div>
     <section id='home' className='home'>
       <div className='home__text-wrapper'>
          <h1>
-          Hello,I'm Sejal Jaiswal
+          Hello,I'm Sejal 
           <br />
           Front end devloper
          </h1>
@@ -24,10 +28,10 @@ export default function Home() {
       end={{transform:'translatex(0px)'}} 
       >
         <div className='home__contact_me'>
-        <button onClick={handleNavigatetocontact}>Hire Me</button>
+        <button onClick={handleNavigatetocontact}>Contact Me</button>
       </div>
       </Animate>
-      
     </section>
+    </div>
   )
 }

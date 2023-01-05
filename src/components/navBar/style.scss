@@ -82,8 +82,11 @@
 }
 
 @media only screen and (max-width : 768px){
-
-    .navbar_container_menu{
+    .navbar{
+      
+    &_container{
+      
+    &_menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -94,24 +97,27 @@
         opacity: 1;
         transition: all 0.5s ease;
 
+
         &.active{
             background: #181818;
-            left:0px;
-            opacity: 1;  
+            left: 0px;
+            opacity: 1;
         }
 
         &_item{
-            border-bottom: 1px solid #282828 ;
+            border-bottom: 1px solid #282828;
             margin: 0px;
-            padding: 20px 0px;
+            padding: 20px 0px; 
         }
-    }
+    } 
+}
+}
+
     .nav-icons{
         display: block;
         cursor: pointer;
         color: var(--yellow-theme-main-color);
         padding-right: 20px;
-        
     }
 }
 
