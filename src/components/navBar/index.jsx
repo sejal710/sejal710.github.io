@@ -18,8 +18,8 @@ export default function Navbar() {
        setToggleIcon(!toggleIcon)
     }
   return (
-    <div >
-        <nav className='navbar'>
+    <div style={{zIndex:'1'}}>
+        <nav className='navbar' >
           <div className='navbar_container'>
              <Link to='/' className='navbar_container_logo'><FaReact size={30} /></Link>
           

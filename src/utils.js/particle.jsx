@@ -7,7 +7,7 @@ export default function Particle() {
       }
   return (
     <div>
-              <Particles id='particles' options={{"fullScreen": {
+     <Particles id='particles' options={{"fullScreen": {
             "enable": true,
             "zIndex": -1
         },
