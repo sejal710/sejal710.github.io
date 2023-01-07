@@ -2,7 +2,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import {Animate} from 'react-simple-animate'
-import sejal from '../../Images/sejal.png'
+import sejal from '../../Images/sejal.jpg'
 import './style.scss'
 
 export default function Home() {

@@ -1,5 +1,7 @@
 
 .about{
+   z-index: -1;
+   position: relative;
     &__content{
        display: flex; 
        gap:20px;

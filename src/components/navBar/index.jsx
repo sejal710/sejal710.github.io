@@ -25,14 +25,14 @@ export default function Navbar() {
           
           <ul className={`navbar_container_menu ${toggleIcon ? 'active' : '' }`}>
              { data.map((item,i) => (
-                <li key={i} className='navbar_container_menu_item'>
+                <li key={i} className='navbar_container_menu_item' onClick={handleToggleIcon}>
                   <Link className='navbar_container_menu_item_links' to={item.to}>
                     {item.label}
                   </Link>
                 </li>
             ))}
             
-              <li className='navbar_container_menu_item last' >
+              <li className='navbar_container_menu_item last' onClick={handleToggleIcon}>
                 <a href="https://drive.google.com/file/d/1cGcCIxgaPzXIjRjcu09ZErU98GUzQK7f/view?usp=share_link">
                 <button>
                   Resume

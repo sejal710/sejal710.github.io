@@ -1,5 +1,6 @@
 .skills {
-    
+    z-index: -1;
+    position: relative;
     &__content-wrapper {
         display: flex;
         padding: 20px;
