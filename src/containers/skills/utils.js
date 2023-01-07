@@ -8,6 +8,7 @@ export const SkillaData = [
       {skillName : "REACT" ,percentage : "85"},
       {skillName : "REDUX" ,percentage : "70"},
       {skillName : "TYPESCRIPT" ,percentage : "70"},
+      {skillName : "NextJs", percentage :"75"}
     ]
     }
 ]
