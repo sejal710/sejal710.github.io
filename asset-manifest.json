@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.838e39f3.css",
+    "main.css": "/static/css/main.9e93aa0c.css",
     "main.js": "/static/js/main.975ea01e.js",
     "static/js/787.586b53ef.chunk.js": "/static/js/787.586b53ef.chunk.js",
     "static/media/Sephora.png": "/static/media/Sephora.52b3098237785dc9d53c.png",
@@ -8,12 +8,12 @@
     "static/media/PharmEasy.png": "/static/media/PharmEasy.54a9a6d5d87a12c886d3.png",
     "static/media/sejal.jpg": "/static/media/sejal.01a12706371c786c6761.jpg",
     "index.html": "/index.html",
-    "main.838e39f3.css.map": "/static/css/main.838e39f3.css.map",
+    "main.9e93aa0c.css.map": "/static/css/main.9e93aa0c.css.map",
     "main.975ea01e.js.map": "/static/js/main.975ea01e.js.map",
     "787.586b53ef.chunk.js.map": "/static/js/787.586b53ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.838e39f3.css",
+    "static/css/main.9e93aa0c.css",
     "static/js/main.975ea01e.js"
   ]
 }
