@@ -7,17 +7,18 @@ import Protfolio from './containers/protfolio/index'
 import Resume from './containers/resume/index'
 import Skills from './containers/skills/index'
 import Navbar from './components/navBar';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import Particle from './utils.js/particle';
 
 function App() {
-  const location = useLocation()
+  // const location = useLocation()
   
-  const renderparticleJsinHomePage = location.pathname === '/'
+  // const renderparticleJsinHomePage = location.pathname === '/'
   return (
     <div className='App'>
       {
-        renderparticleJsinHomePage && <Particle />
+        // renderparticleJsinHomePage &&
+         <Particle />
       }
       
       <Navbar />

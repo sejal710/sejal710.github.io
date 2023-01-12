@@ -5,12 +5,12 @@
 
 
 
-  --yellow-theme-background-color : #1d1d1d;
+  --yellow-theme-background-color :#1d1d1d ;
   --yellow-theme-main-color:#ffdd40;
   --yellow-theme-sub-text-color:#ffffff;
   --yellow-theme-nav-background-color:#181818;
 }
-
+// #ffffff
 *{
    box-sizing: border-box;
    padding: 0;
@@ -24,6 +24,7 @@ html{
 
 body{
   background: var(--yellow-theme-background-color );
+  // background-color: white;
   height: 100%;
 }
 

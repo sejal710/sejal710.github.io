@@ -1,4 +1,11 @@
-
+.nav{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height:80px ;
+    // overflow: hidden;
+    top: 0;
+}
 .navbar{
     background-color: var(--yellow-theme-nav-background-color);
     display: 'flex';
@@ -6,8 +13,6 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
-
     &_container{
         display: flex;
         align-items: center;

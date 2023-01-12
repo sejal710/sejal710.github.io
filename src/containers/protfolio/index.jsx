@@ -22,10 +22,10 @@ export default function Protfolio() {
 
   return (
     <section id='protfolio' className='protfolio'>
-    <PageHeaderContainer
+     <PageHeaderContainer
     headerText='My Project'
     icon ={<SiCodeproject size={40} />}/>
-    <div className='protfolio__content'>
+    {/*<div className='protfolio__content'>
     <div className='protfolio__content__cards'>
       {
         Project.map((item,i)=>(
@@ -53,7 +53,7 @@ export default function Protfolio() {
         ))
       }
     </div>
-    </div>
+    </div> */}
   </section>
   )
 }

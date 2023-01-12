@@ -4,6 +4,11 @@ import { useNavigate } from 'react-router-dom'
 import {Animate} from 'react-simple-animate'
 import sejal from '../../Images/sejal.jpg'
 import './style.scss'
+import About from '../about/index';
+import Protfolio from '../protfolio/index';
+// import Resume from '../resume/index';
+import Skills from '../skills/index';
+import Contact from '../contact/index';
 
 export default function Home() {
    const navigate = useNavigate()
@@ -11,6 +16,7 @@ export default function Home() {
        navigate('/contact')
   }
   return (
+    <div className='ho'>
     <div className='Home-head'>
           <div className='image'>
              <img  src={sejal} alt='Sejal' />
@@ -32,6 +38,11 @@ export default function Home() {
       </div>
       </Animate>
     </section>
+    </div>
+    <About />
+    <Skills />
+    <Protfolio />
+    <Contact />
     </div>
   )
 }

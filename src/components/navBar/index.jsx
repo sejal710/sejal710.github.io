@@ -10,6 +10,7 @@ const data = [
     {label : 'SKILLS', to : '/skills'},
     {label : 'PROJECT', to : '/project'},
     {label : 'CONTACT', to : '/contact'}, 
+    {label : 'GITHUB' ,to : '/github'}
 ]
 
 export default function Navbar() {
@@ -18,7 +19,7 @@ export default function Navbar() {
        setToggleIcon(!toggleIcon)
     }
   return (
-    <div style={{zIndex:'1'}}>
+    <div className='nav'>
         <nav className='navbar' >
           <div className='navbar_container'>
              <Link to='/' className='navbar_container_logo'><FaReact size={30} /></Link>
