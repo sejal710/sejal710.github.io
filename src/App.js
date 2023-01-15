@@ -4,7 +4,7 @@ import Home from './containers/home/index';
 import About from './containers/about/index'
 import Contact from './containers/contact/index'
 import Protfolio from './containers/protfolio/index'
-import Resume from './containers/resume/index'
+import Github from './containers/github/index'
 import Skills from './containers/skills/index'
 import Navbar from './components/navBar';
 // import { useLocation } from 'react-router-dom';
@@ -21,16 +21,22 @@ function App() {
          <Particle />
       }
       
-      <Navbar />
+      <Navbar/>
       <div className='App__main-page-content'>
-      <Routes>
+        <Home />
+        <About />
+        <Skills />
+        <Protfolio />
+        <Github />
+        <Contact />
+      {/* <Routes>
         <Route index path='/' element={<Home />} />
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contact />}/>
         <Route path='/project' element={<Protfolio/>} />
         <Route path='/resume' element={<Resume />} />
         <Route path='/skills' element={<Skills />} />
-      </Routes>
+      </Routes> */}
       </div>
     
     </div>

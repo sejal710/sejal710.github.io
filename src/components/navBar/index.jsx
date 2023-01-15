@@ -4,16 +4,16 @@ import { Link} from 'react-router-dom';
 import {HiOutlineX} from 'react-icons/hi'
 import './style.scss'
 
-const data = [
-    {label : 'HOME', to : '/'},
-    {label : 'ABOUT ME', to : '/about'},
-    {label : 'SKILLS', to : '/skills'},
-    {label : 'PROJECT', to : '/project'},
-    {label : 'CONTACT', to : '/contact'}, 
-    {label : 'GITHUB' ,to : '/github'}
-]
-
 export default function Navbar() {
+  
+const data = [
+  {label : 'HOME', to : '#home'},
+  {label : 'ABOUT ME', to : "#about"},
+  {label : 'SKILLS', to : '#skills'},
+  {label : 'PROJECT', to : '#project'},
+  {label : 'GITHUB' ,to : '#github'},
+  {label : 'CONTACT', to : '#contact'}
+]
     const [toggleIcon,setToggleIcon] = useState(false)
     const handleToggleIcon = () => {
        setToggleIcon(!toggleIcon)
@@ -22,14 +22,14 @@ export default function Navbar() {
     <div className='nav'>
         <nav className='navbar' >
           <div className='navbar_container'>
-             <Link to='/' className='navbar_container_logo'><FaReact size={30} /></Link>
+             <a href='#home' className='navbar_container_logo'><FaReact size={30} /></a>
           
           <ul className={`navbar_container_menu ${toggleIcon ? 'active' : '' }`}>
              { data.map((item,i) => (
                 <li key={i} className='navbar_container_menu_item' onClick={handleToggleIcon}>
-                  <Link className='navbar_container_menu_item_links' to={item.to}>
+                  <a className='navbar_container_menu_item_links' href={item.to}>
                     {item.label}
-                  </Link>
+                  </a>
                 </li>
             ))}
             

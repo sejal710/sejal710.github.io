@@ -14,46 +14,31 @@ const Project = [
 
 
 export default function Protfolio() {
-  const [hoveredValue,setHoveredValue] = useState(null)
-
-  const handleHover = (indexValue) => {
-     setHoveredValue(indexValue)
-  }
-
   return (
-    <section id='protfolio' className='protfolio'>
+    <section id='project' className='protfolio'>
      <PageHeaderContainer
     headerText='My Project'
     icon ={<SiCodeproject size={40} />}/>
-    {/*<div className='protfolio__content'>
-    <div className='protfolio__content__cards'>
+     <div className='protfolio__content'>
+   <div className='protfolio__content__cards'>
       {
         Project.map((item,i)=>(
-          <div className='protfolio__content__cards__item' key={item.id} 
-          onMouseEnter = {()=>handleHover(i)}
-          onMouseLeave = {()=>handleHover(null)}
-          > 
-              <div className='protfolio__content__cards__item__image-wrapper'>
-                <a href={item.git}>
-                  <img alt={item.name} src={item.image}/>
-                </a>
-              </div>
-              <div className='overlay' >
-               {
-                i === hoveredValue && (
-                  <div>
-                    <p>{item.name}</p>
-                    <a href={item.link}>
-                    <button >Visit </button></a>
-                  </div>
-                )
-               }
-              </div>
-          </div>
+          <div key={i} className='protfolio__content__cards_item'>
+           <div className='protfolio__content__cards_item__image' >
+            <img src={item.image} />
+           </div>
+           <div className='protfolio__content__cards_item__description' >
+            <p>{item.name}</p>
+            <div className='protfolio__content__cards_item__description__btn'>
+              <a href={item.git}><button>Code</button></a>
+              <a href={item.link} ><button>Deploy</button></a>
+            </div>
+            </div>
+          </div>  
         ))
       }
     </div>
-    </div> */}
+    </div> 
   </section>
   )
 }

@@ -16,12 +16,12 @@ export default function Home() {
        navigate('/contact')
   }
   return (
-    <div className='ho'>
+    <div id="home" className='ho'>
     <div className='Home-head'>
           <div className='image'>
              <img  src={sejal} alt='Sejal' />
         </div>
-    <section id='home' className='home'>
+    <section id='home' className='homea'>
       <div className='home__text-wrapper'>
          <h1>
           Hello,I'm Sejal 
@@ -39,10 +39,10 @@ export default function Home() {
       </Animate>
     </section>
     </div>
-    <About />
+    {/* <About />
     <Skills />
     <Protfolio />
-    <Contact />
+    <Contact /> */}
     </div>
   )
 }

@@ -22,6 +22,7 @@
     "rc-progress": "^3.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^3.4.0",
     "react-icons": "^4.7.1",
     "react-leaflet": "^4.2.0",
     "react-loaders": "^3.0.1",
