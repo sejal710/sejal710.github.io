@@ -30,9 +30,12 @@
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "react-simple-animate": "^3.5.2",
+    "react-slick": "^0.29.0",
+    "react-tooltip": "^5.7.4",
     "react-tsparticles": "^2.7.1",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.57.1",
+    "slick-carousel": "^1.8.1",
     "tsparticles": "^2.7.1",
     "web-vitals": "^2.1.4"
   },

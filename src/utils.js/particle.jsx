@@ -19,8 +19,9 @@ export default function Particle() {
                     "value_area": 800
                 }
             },
+            //   #ffffff   181818
             "color": {
-                "value": "#181818"
+                "value": "#1976D2"
             },
             "shape": {
                 "type": "star",
@@ -58,6 +59,7 @@ export default function Particle() {
                     "sync": false
                 }
             },
+            // #111
             "line_linked": {
                 "enable": true,
                 "distance": 600,
@@ -116,9 +118,10 @@ export default function Particle() {
                 }
             }
         },
+        // #111
         "retina_detect": true,
         "background": {
-            "color": "#111",
+            "color": "#ffffff",
             "image": "",
             "position": "50% 50%",
             "repeat": "no-repeat",

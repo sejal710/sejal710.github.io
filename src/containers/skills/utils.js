@@ -9,8 +9,7 @@ export const SkillaData = [
       {skillName : "REDUX" ,percentage : "70"},
       {skillName : "TYPESCRIPT" ,percentage : "70"},
       {skillName : "NextJs", percentage :"75"},
-      {skillName : 'Chakra UI',percentage:"85"},
-      {skillName : 'Rest API',percentage:"90"}
+      {skillName : 'Chakra UI',percentage:"85"}
     ]
     },
     {
@@ -21,8 +20,7 @@ export const SkillaData = [
         {skillName:"VERCEL",percentage:"85"},
         {skillName:"Github",percentage:"85"},
         {skillName:'NPM',percentage:"90"},
-        {skillName:"VISUAL STUDIO",percentage:"85"},
-        {skillName:"SLACK",percentage:"95"}
+        {skillName:"VISUAL STUDIO",percentage:"85"}
       ]
     },
     {
@@ -30,6 +28,8 @@ export const SkillaData = [
       data : [
          {skillName : "Node.js",percentage:"80"},
          {skillName : "EXPRESS.js", percentage:"60"},
+         {skillName:"MongoDB",percentage:"85"},
+         {skillName : 'Rest API',percentage:"90"}
 
       ]
     },
