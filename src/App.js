@@ -1,5 +1,4 @@
 import './App.scss';
-import {Route,Routes} from 'react-router-dom'
 import Home from './containers/home/index';
 import About from './containers/about/index'
 import Contact from './containers/contact/index'
@@ -7,13 +6,16 @@ import Protfolio from './containers/protfolio/index'
 import Github from './containers/github/index'
 import Skills from './containers/skills/index'
 import Navbar from './components/navBar';
-// import { useLocation } from 'react-router-dom';
+import "aos/dist/aos.css";
+import Aos from "aos";
+import {Link} from '@chakra-ui/react'
 import Particle from './utils.js/particle';
+import { useEffect } from 'react';
 
 function App() {
-  // const location = useLocation()
-  
-  // const renderparticleJsinHomePage = location.pathname === '/'
+  useEffect(()=>{
+    Aos.init();
+  },[])
   return (
     <div className='App'>
       {
@@ -29,14 +31,17 @@ function App() {
         <Protfolio />
         <Github />
         <Contact />
-      {/* <Routes>
-        <Route index path='/' element={<Home />} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='/project' element={<Protfolio/>} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/skills' element={<Skills />} />
-      </Routes> */}
+        <Link className="home-goto_top" data-aos="fade-left" href="#home">
+          <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span>
+            <img src="https://media2.giphy.com/media/KZfAUL6c7G3Odb3uDf/source.gif" />
+          </span>
+        </Link>
       </div>
     
     </div>

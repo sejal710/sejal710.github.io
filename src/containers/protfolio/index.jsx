@@ -4,7 +4,9 @@ import {SiCodeproject} from 'react-icons/si'
 import Travel from '../../Images/Travel.png'
 import PharmEasy from '../../Images/PharmEasy.png'
 import Sephora from '../../Images/Sephora.png'
+import Codepan from '../../Images/Codepan.png'
 import './style.scss'
+import { Box } from '@chakra-ui/react'
 // import Slider from 'react-slick';
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -28,6 +30,15 @@ const Project = [
   link:"https://frabjous-dango-2bef78.netlify.app/",
   git:"https://github.com/sejal710/grieving-wax-8717/",
   describe:"In this application you can buy any medicine from your home. I can create this website by using html, css and javascript."
+},
+{
+  id:4,
+  name:'Codepan',
+  image:Codepan,
+  link:"https://code-editor-rose-kappa.vercel.app/",
+  git:"https://github.com/sejal710/codepan",
+  describe:"CodePen is the best place to build, test, and discover front-end code. CodePen is a social development environment for front-end designers and developers"
+
 }
 ]
 
@@ -45,9 +56,9 @@ export default function Protfolio() {
       {
         Project.map((el,i) => (
           <div className='protfolio__content__item' key={i} >
-              <div className='protfolio__content__item__image'>
-                <img src={el.image}/>
-              </div>
+              <Box className='protfolio__content__item__image' backgroundImage={el.image} />
+                {/* <img src={el.image}/> */}
+              {/* </div> */}
               <div className='protfolio__content__item__name'>
                 <p>{el.name}</p>
               </div>
@@ -55,8 +66,8 @@ export default function Protfolio() {
                 <p>{el.describe}</p>
               </div>
               <div className='protfolio__content__item__btn'>
-                  <div> <button>Live</button></div>
-                  <div><button>Demo</button></div>
+                  <div><a href={el.link}> <button>Live</button></a></div>
+                  <div><a href={el.git}><button>Code</button></a></div>
               </div>
           </div>
         ))

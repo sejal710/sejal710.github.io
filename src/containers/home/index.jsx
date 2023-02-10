@@ -14,7 +14,7 @@ export default function Home() {
           <div className='image'>
              <img  src={sejal} alt='Sejal' />
         </div>
-    <section id='home' className='homea'>
+    <section  className='homea'>
       <div className='home__text-wrapper'>
          <h1>Hello,I'm Sejal 
          <br/>
