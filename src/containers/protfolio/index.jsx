@@ -37,8 +37,7 @@ const Project = [
   image:Codepan,
   link:"https://code-editor-rose-kappa.vercel.app/",
   git:"https://github.com/sejal710/codepan",
-  describe:"CodePen is the best place to build, test, and discover front-end code. CodePen is a social development environment for front-end designers and developers"
-
+  describe:"CodePen is the best place to build, test, and discover front-end code."
 }
 ]
 
