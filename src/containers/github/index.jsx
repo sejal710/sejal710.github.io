@@ -2,7 +2,7 @@ import React from 'react'
 import PageHeaderContainer from '../../components/pageHeaderContainer'
 import {AiFillGithub} from 'react-icons/ai'
 import GitHubCalendar from "react-github-calendar";
-import ReactTooltip from 'react-tooltip';
+// import ReactTooltip from 'react-tooltip';
 import './style.scss'
 
 export default function Github() {
@@ -25,7 +25,7 @@ export default function Github() {
     color={'var(--yellow-theme-main-color)'}
     blockMargin={5}
     fontSize={13}
-    children={<ReactTooltip html />}
+    // children={<ReactTooltip html />}
     /> 
     </div>
 

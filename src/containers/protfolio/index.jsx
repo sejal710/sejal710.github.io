@@ -43,8 +43,8 @@ export default function Protfolio() {
     icon ={<SiCodeproject size={40} />}/>
      <div className='protfolio__content'>
       {
-        Project.map((el) => (
-          <div className='protfolio__content__item'>
+        Project.map((el,i) => (
+          <div className='protfolio__content__item' key={i} >
               <div className='protfolio__content__item__image'>
                 <img src={el.image}/>
               </div>

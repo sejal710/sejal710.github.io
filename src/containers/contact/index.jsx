@@ -3,27 +3,41 @@ import React, { useRef} from 'react'
 import PageHeaderContainer from '../../components/pageHeaderContainer'
 import {IoMdContact} from 'react-icons/io'
 import { Animate } from "react-simple-animate";
+import { useToast ,Box,Flex,Link,Tooltip,Image} from '@chakra-ui/react'
 import './style.scss'
 import emailjs from 'emailjs-com'
 
 export default function Contact() {
    const form = useRef()
-   const handleChange = (e) => {
-      //  console.log(e.target.value,e.target.name)
+   const toast = useToast();
+   const handleClick = (e) => {
       e.preventDefault();
 
       emailjs.sendForm('service_urwyk98', 'template_cy816tn', form.current, 'A2p29N7_Ag2DN6dx9')
         .then((result) => {
-            console.log(result.text);
+          console.log(result.text)
+          toast({
+            position: 'top-right',
+            title: 'Email Sent ✔',
+            description: `Thank You for the message!`,
+            status: 'success',
+            duration: 5000,
+            isClosable: true,
+        })
         }, (error) => {
-            console.log(error.text);
+          console.log(error.text);
+          toast({
+              title: 'Email Not sent.',
+              description: "There is some error",
+              status: 'warning',
+              duration: 5000,
+              isClosable: true,
+          })
         });
-     
-   }
 
-    // emailjs.sendForm('service_urwyk98','template_cy816tn',value)
+      
+    }
 
-   
   return (
     <section id='contact' className='contact'>
     <PageHeaderContainer
@@ -54,7 +68,7 @@ export default function Contact() {
             transform: "translateX(0px)",
           }}
         >
-          <form className="contact__content__form" onSubmit={handleChange} ref={form}>
+          <form className="contact__content__form" onSubmit={handleClick} ref={form} >
             <div className="contact__content__form__controlswrapper">
               <div>
                 <input
@@ -95,6 +109,45 @@ export default function Contact() {
           </form>
         </Animate>
       </div>
+      <Flex gap={["10px", "20px", "20px", "40px"]} className="contact__flex">
+      <Link href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJKjFpWNfPwzpLxQBSsJZcJXkQQztWwwvdLtVMggsDRTMHPmGbsDwfWxzhNwdNlhDTZL" target="_blank">
+      <Tooltip label='710sejal@gmail.com'>
+            <Box className='contact__flex__icons' >
+                <Box>
+                <Image w="100%" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" />
+            </Box>
+          </Box >
+      </Tooltip>
+     </Link>
+     <Link href='https://www.linkedin.com/in/sejal-jaiswal-645b4b217/' target="_blank">
+                <Tooltip label='Sejal Jaiswal'>
+                  <Box className='contact__flex__icons'>
+                    <Box>
+                <Image w="100%" src="https://openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png" />
+              </Box>
+           </Box>
+          </Tooltip>
+       </Link>
+
+      <Link href="https://github.com/sejal710" target="_blank">
+          <Tooltip label='sejal710' >
+            <Box className='contact__flex__icons'>
+             <Box>
+                <Image w="100%" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
+             </Box>
+            </Box>
+        </Tooltip>
+      </Link>
+      <Link target="_blank">
+         <Tooltip label='+91 6261019377'>
+            <Box className='contact__flex__icons'>
+              <Box>
+                <Image w="100%" src="https://i.ibb.co/1057jXJ/png-transparent-telephone-logo-iphone-telephone-call-smartphone-phone-electronics-text-trademark-thu.png" />
+              </Box>
+            </Box>
+          </Tooltip>
+        </Link>
+      </Flex>
   </section>
   )
 }

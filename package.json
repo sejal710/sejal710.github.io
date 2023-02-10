@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/react": "^2.4.5",
+    "@chakra-ui/react": "^2.4.9",
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -16,7 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animation.css": "^0.1.0",
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^8.0.2",
+    "framer-motion": "^8.5.5",
     "gsap-trial": "^3.11.4",
     "loaders.css": "^0.1.2",
     "rc-progress": "^3.4.1",

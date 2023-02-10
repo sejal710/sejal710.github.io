@@ -108,15 +108,60 @@
             }
         }
     }
+    &__flex{
+        width: 40%;
+        height: 80px;
+        margin: auto;
+        &__icons{
+            width: 80px;
+            height: 100%;
+            border-radius: 50%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--yellow-theme-main-color);
+            &:hover{
+                background: var(--yellow-theme-main-color);
+            }
+        }
+    }
 }
 
 
-@media only screen and (max-width : 768px){
-    .contact__content__form{
+@media only screen and (min-width : 551px) and (max-width : 768px){
+    .contact {
+    &__content__form{
         text-align: center;
 
         &__controlswrapper{
             grid-template-columns: repeat(1,1fr);
         }
     }
+    &__flex{
+        height: 45px;
+        width: 45%;
+        &__icons{
+            width: 50px;
+        }
+    }
+}
+}
+
+@media only screen and (max-width :550px){
+    .contact{
+        &__content__form{
+            text-align: center;
+    
+            &__controlswrapper{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    &__flex{
+        width: 70%;
+        &__icons{
+            width: 50px;
+        }
+    }
+}
 }
