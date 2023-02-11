@@ -26,15 +26,13 @@ export default function Skills() {
                     {
                       item.data.map((skillItem,j)=>(
                         <div key={j} className='skills__content-wrapper__inner-content__progressbar-container__div'>
-                            <div className='skills__content-wrapper__inner-content__progressbar-container__div__image'>
-                              <img  src={skillItem.icons} />
-                            </div>
-                            <div className='skills__content-wrapper__inner-content__progressbar-container__div__text'>
-                              <p>{skillItem.skillName}</p>
-                            </div>
-                            <div>
-
-                            </div>
+                        <span></span>
+                        <div className='skills__content-wrapper__inner-content__progressbar-container__div__main'>
+                          <img src={skillItem.icons} alt={skillItem.skillName} />
+                          <div>
+                            <p>{skillItem.skillName}</p>
+                          </div>
+                        </div>
                         </div>
                       ))
                     }
