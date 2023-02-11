@@ -29,7 +29,7 @@ export default function About() {
       start={{transform:'translateX(-900px)'}} 
       end={{transform:'translatex(0px)'}} 
       > 
-       <h3>Front End Devloper</h3>
+       <h3>Full Stack Web Developer</h3>
         <p>{jobsummary}</p>
       </Animate>
 
