@@ -144,6 +144,10 @@
                 }
                 &__progressbar-container{
                     margin-bottom: 20px;
+                    div{
+                        width: 80%;
+                        margin: auto;
+                    }
                 }
             }
         }

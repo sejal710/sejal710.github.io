@@ -147,6 +147,15 @@ export default function Contact() {
             </Box>
           </Tooltip>
         </Link>
+        <Link target="_blank" href="https://www.instagram.com/sejal_jaiswal__">
+         <Tooltip label='sejal_jaiswal__'>
+            <Box className='contact__flex__icons'>
+              <Box>
+                <Image w="100%" src="https://clipartcraft.com/images/instagram-logo-circle-1.png" />
+              </Box>
+            </Box>
+          </Tooltip>
+        </Link>
       </Flex>
   </section>
   )

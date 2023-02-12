@@ -116,9 +116,11 @@
         }
     }
     &__flex{
-        width: 40%;
+        width: 100%;
         height: 80px;
         margin: auto;
+        display: flex;
+        flex-wrap: wrap;
         &__icons{
             width: 80px;
             height: 100%;
@@ -147,7 +149,6 @@
     }
     &__flex{
         height: 45px;
-        width: 45%;
         &__icons{
             width: 50px;
         }
@@ -165,7 +166,7 @@
             }
         }
     &__flex{
-        width: 70%;
+        height: 45px;
         &__icons{
             width: 50px;
         }
