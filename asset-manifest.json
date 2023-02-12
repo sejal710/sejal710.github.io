@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bdbc637.css",
-    "main.js": "/static/js/main.d0ff4098.js",
+    "main.css": "/static/css/main.f460c253.css",
+    "main.js": "/static/js/main.a7806723.js",
     "static/js/787.586b53ef.chunk.js": "/static/js/787.586b53ef.chunk.js",
     "static/media/Sephora.png": "/static/media/Sephora.52b3098237785dc9d53c.png",
     "static/media/Travel.png": "/static/media/Travel.b3bf47321d6625aca42a.png",
     "static/media/PharmEasy.png": "/static/media/PharmEasy.54a9a6d5d87a12c886d3.png",
-    "static/media/sejal.jpg": "/static/media/sejal.01a12706371c786c6761.jpg",
+    "static/media/sejal.jpg": "/static/media/sejal.8cb6be6d333c5b833f0c.jpg",
     "static/media/Codepan.png": "/static/media/Codepan.e1b01df09da4a82e1b1b.png",
     "index.html": "/index.html",
-    "main.6bdbc637.css.map": "/static/css/main.6bdbc637.css.map",
-    "main.d0ff4098.js.map": "/static/js/main.d0ff4098.js.map",
+    "main.f460c253.css.map": "/static/css/main.f460c253.css.map",
+    "main.a7806723.js.map": "/static/js/main.a7806723.js.map",
     "787.586b53ef.chunk.js.map": "/static/js/787.586b53ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bdbc637.css",
-    "static/js/main.d0ff4098.js"
+    "static/css/main.f460c253.css",
+    "static/js/main.a7806723.js"
   ]
 }
