@@ -65,8 +65,8 @@ export default function Protfolio() {
                 <p>{el.describe}</p>
               </div>
               <div className='protfolio__content__item__btn'>
-                  <div><a href={el.link}> <button>Live</button></a></div>
-                  <div><a href={el.git}><button>Code</button></a></div>
+                  <div><a href={el.link} target="_blank"> <button>Live</button></a></div>
+                  <div><a href={el.git} target="_blank"><button>Code</button></a></div>
               </div>
           </div>
         ))

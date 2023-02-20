@@ -34,7 +34,7 @@ const data = [
             ))}
             
               <li className='navbar_container_menu_item last' onClick={handleToggleIcon}>
-                <a href="https://drive.google.com/file/d/1cGcCIxgaPzXIjRjcu09ZErU98GUzQK7f/view?usp=share_link">
+                <a href="https://drive.google.com/file/d/1cGcCIxgaPzXIjRjcu09ZErU98GUzQK7f/view?usp=share_link" target="_blank">
                 <button>
                   Resume
                 </button>
