@@ -33,7 +33,7 @@ export default function About() {
         <p>{jobsummary}</p>
       </Animate>
 
-      <Animate play duration={1.5} delay={1} 
+      {/* <Animate play duration={1.5} delay={1} 
       start={{transform:'translateX(500px)'}} 
       end={{transform:'translatex(0px)'}} 
       > 
@@ -48,7 +48,7 @@ export default function About() {
           ))
         }
        </ul>
-       </Animate>
+       </Animate> */}
         </div>
         <div className='about__content__servicesWrapper'>
 

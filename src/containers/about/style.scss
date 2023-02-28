@@ -2,8 +2,11 @@
 .about{
    z-index: -1;
    position: relative;
+
     &__content{
        display: flex; 
+       justify-content: center;
+       align-items: center;
        gap:20px;
        padding: 20px;
        width: 100%;
@@ -27,7 +30,7 @@
             font-size: 1.8rem;
             line-height: 1.5;
             padding-bottom: 20px;
-            border-bottom: 1px dashed var(--yellow-theme-main-color);
+            // border-bottom: 1px dashed var(--yellow-theme-main-color);
         }
         ul > li{
            line-height: 1rem;

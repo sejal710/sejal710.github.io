@@ -33,13 +33,13 @@ const data = [
                 </li>
             ))}
             
-              <li className='navbar_container_menu_item last' onClick={handleToggleIcon}>
+              {/* <li className='navbar_container_menu_item last' onClick={handleToggleIcon}>
                 <a href="https://drive.google.com/file/d/1cGcCIxgaPzXIjRjcu09ZErU98GUzQK7f/view?usp=share_link" target="_blank">
                 <button>
                   Resume
                 </button>
                 </a>
-                </li>
+                </li> */}
           </ul> 
           <div className='nav-icons' onClick={handleToggleIcon}>
              {

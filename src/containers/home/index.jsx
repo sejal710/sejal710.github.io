@@ -28,7 +28,7 @@ export default function Home() {
       end={{transform:'translatex(0px)'}} 
       >
         <div className='home__contact_me'>
-        <a href='#contact'><button>Contact Me</button></a>
+        <a href='https://drive.google.com/file/d/1cGcCIxgaPzXIjRjcu09ZErU98GUzQK7f/view?usp=share_link'><button>Resume</button></a>
       </div>
       </Animate>
     </section>
