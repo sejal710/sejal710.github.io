@@ -31,6 +31,9 @@ function App() {
         <Protfolio />
         <Github />
         <Contact />
+        <div className='footer'>
+        <p>💛💛Sejal Jaiswal💛💛</p>
+        </div> 
         <Link className="home-goto_top" data-aos="fade-left" href="#home">
           <div class="loader">
             <span></span>
@@ -43,7 +46,6 @@ function App() {
           </span>
         </Link>
       </div>
-    
     </div>
   );
 }

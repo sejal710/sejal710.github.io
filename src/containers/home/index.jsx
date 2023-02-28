@@ -3,6 +3,7 @@ import React from 'react';
 import {Animate} from 'react-simple-animate'
 import sejal from '../../Images/sejal.jpg'
 import './style.scss'
+import resume from '../../Resume/Sejal_Jaiswal_Resume.pdf'
 
 
 export default function Home() {
@@ -28,7 +29,9 @@ export default function Home() {
       end={{transform:'translatex(0px)'}} 
       >
         <div className='home__contact_me'>
-        <a href='https://drive.google.com/file/d/1cGcCIxgaPzXIjRjcu09ZErU98GUzQK7f/view?usp=share_link'><button>Resume</button></a>
+        <a href={resume} download>
+          <button  onClick={()=>window.open("https://drive.google.com/file/d/1zhOuajJYkGPHvwD4l4ZErNQ3EEjiHeXV/view?usp=share_link","_blank")} >Resume</button>
+          </a>
       </div>
       </Animate>
     </section>

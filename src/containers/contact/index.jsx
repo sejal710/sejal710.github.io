@@ -3,8 +3,9 @@ import React, { useRef} from 'react'
 import PageHeaderContainer from '../../components/pageHeaderContainer'
 import {IoMdContact} from 'react-icons/io'
 import { Animate } from "react-simple-animate";
-import { useToast ,Box,Flex,Link,Tooltip,Image} from '@chakra-ui/react'
+import { useToast} from '@chakra-ui/react'
 import './style.scss'
+import {AiFillGithub, AiFillLinkedin, AiOutlineMail} from 'react-icons/ai'
 import emailjs from 'emailjs-com'
 
 export default function Contact() {
@@ -109,54 +110,29 @@ export default function Contact() {
           </form>
         </Animate>
       </div>
-      <Flex gap={["10px", "20px", "20px", "40px"]} className="contact__flex">
-      <Link href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJKjFpWNfPwzpLxQBSsJZcJXkQQztWwwvdLtVMggsDRTMHPmGbsDwfWxzhNwdNlhDTZL" target="_blank">
-      <Tooltip label='710sejal@gmail.com'>
-            <Box className='contact__flex__icons' >
-                <Box>
-                <Image w="100%" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" />
-            </Box>
-          </Box >
-      </Tooltip>
-     </Link>
-     <Link href='https://www.linkedin.com/in/sejal-jaiswal-645b4b217/' target="_blank">
-                <Tooltip label='Sejal Jaiswal'>
-                  <Box className='contact__flex__icons'>
-                    <Box>
-                <Image w="100%" src="https://openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png" />
-              </Box>
-           </Box>
-          </Tooltip>
-       </Link>
-
-      <Link href="https://github.com/sejal710" target="_blank">
-          <Tooltip label='sejal710' >
-            <Box className='contact__flex__icons'>
-             <Box>
-                <Image w="100%" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
-             </Box>
-            </Box>
-        </Tooltip>
-      </Link>
-      <Link target="_blank">
-         <Tooltip label='+91 6261019377'>
-            <Box className='contact__flex__icons'>
-              <Box>
-                <Image w="100%" src="https://i.ibb.co/1057jXJ/png-transparent-telephone-logo-iphone-telephone-call-smartphone-phone-electronics-text-trademark-thu.png" />
-              </Box>
-            </Box>
-          </Tooltip>
-        </Link>
-        <Link target="_blank" href="https://www.instagram.com/sejal_jaiswal__">
-         <Tooltip label='sejal_jaiswal__'>
-            <Box className='contact__flex__icons'>
-              <Box>
-                <Image w="100%" src="https://clipartcraft.com/images/instagram-logo-circle-1.png" />
-              </Box>
-            </Box>
-          </Tooltip>
-        </Link>
-      </Flex>
+      <div className="contacts" >
+      <h1 className="heading">Contact</h1>
+      <div className="details">
+        <h3 className="ph-num">Contant Number - +91-6101937726</h3>
+        <h3 className="em-adr">Email Address - 710sejal@gmail.com</h3>
+        <h3 className="address">Address - Indore, Madhya Pradesh</h3>
+      </div>
+      <div className="sc-links">
+        <div onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/sejal-jaiswal-645b4b217/",
+                      "_blank"
+                    )
+                  } className="linkedIn"><AiFillLinkedin/></div>
+        <div onClick={() =>
+                    window.open(
+                      "https://github.com/sejal710",
+                      "_blank"
+                    )
+                  } className="github"><AiFillGithub/></div>
+        <div className="email"><AiOutlineMail/></div>
+      </div>
+    </div>
   </section>
   )
 }

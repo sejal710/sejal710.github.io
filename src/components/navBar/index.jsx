@@ -3,6 +3,7 @@ import {FaBars,FaReact} from 'react-icons/fa';
 import { Link} from 'react-router-dom';
 import {HiOutlineX} from 'react-icons/hi'
 import './style.scss'
+import resume from '../../Resume/Sejal_Jaiswal_Resume.pdf'
 
 export default function Navbar() {
   
@@ -12,7 +13,8 @@ const data = [
   {label : 'SKILLS', to : '#skills'},
   {label : 'PROJECT', to : '#project'},
   {label : 'GITHUB' ,to : '#github'},
-  {label : 'CONTACT', to : '#contact'}
+  {label : 'CONTACT', to : '#contact'},
+  {label:"RESUME",to:resume}
 ]
     const [toggleIcon,setToggleIcon] = useState(false)
     const handleToggleIcon = () => {
@@ -27,9 +29,11 @@ const data = [
           <ul className={`navbar_container_menu ${toggleIcon ? 'active' : '' }`}>
              { data.map((item,i) => (
                 <li key={i} className='navbar_container_menu_item' onClick={handleToggleIcon}>
+                  {item.label === 'Resume' ? <a className='navbar_container_menu_item_links' href={item.to} download>  {item.label}
+                  </a> :
                   <a className='navbar_container_menu_item_links' href={item.to}>
                     {item.label}
-                  </a>
+                  </a>}
                 </li>
             ))}
             

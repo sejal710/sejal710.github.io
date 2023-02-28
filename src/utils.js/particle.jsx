@@ -19,9 +19,9 @@ export default function Particle() {
                     "value_area": 800
                 }
             },
-            //   #ffffff   181818
+            //     181818 #1976D2 #ffffff
             "color": {
-                "value": "#1976D2"
+                "value": "#ffffff"
             },
             "shape": {
                 "type": "star",
@@ -59,11 +59,11 @@ export default function Particle() {
                     "sync": false
                 }
             },
-            // #111
+            //   #ffffff
             "line_linked": {
                 "enable": true,
                 "distance": 600,
-                "color": "#ffffff",
+                "color": "#111",
                 "opacity": 0.4,
                 "width": 2
             },
@@ -118,10 +118,10 @@ export default function Particle() {
                 }
             }
         },
-        // #111
+        // #ffffff
         "retina_detect": true,
         "background": {
-            "color": "#ffffff",
+            "color": "#111",
             "image": "",
             "position": "50% 50%",
             "repeat": "no-repeat",

@@ -7,7 +7,8 @@
     top: 0;
 }
 .navbar{
-    background-color: var(--yellow-theme-nav-background-color);
+    background-color: var(--yellow-theme-main-color);
+    // background-color: #EF5350;
     display: 'flex';
     height: 80px;
     justify-content: center;
@@ -23,7 +24,8 @@
         flex: 1;
         
         &_logo{
-           color: var(--yellow-theme-main-color); 
+           color: var(--yellow-theme-nav-background-color); 
+        // color: #EF5350;
            cursor: pointer;
         }
 
@@ -48,26 +50,31 @@
                }
                &:hover::after{
                 width: 100%;
-                background: var(--yellow-theme-main-color) ;
+                // background: #EF5350;
+                background: var(--yellow-theme-nav-background-color) ;
                }
                &_links{
-                 color: var(--yellow-theme-main-color);
+                 color: var(--yellow-theme-nav-background-color);
+                //  color: #EF5350;
                  text-decoration: none;
                  padding: 0.5rem;
                }
                a{
                button {
                 cursor: pointer;
-                padding: 10px 30px;
+                padding: 8px 25px;
                 font-size: 2rem;
-                background: transparent;               
-                border: 1.5px solid var(--yellow-theme-main-color);
+                background: transparent;    
+                // border: 1.5px solid #EF5350;           
+                border: 1.5px solid var(--yellow-theme-nav-background-color);
                 border-radius: 4px;
                 font-weight: 400;
-                color: var(--yellow-theme-main-color);
-        
+                color: var(--yellow-theme-nav-background-color);
+                // color: #EF5350;
+
                 &:hover{
-                    background: var(--yellow-theme-main-color);
+                    // background: #EF5350;
+                    background: var(--yellow-theme-nav-background-color);
                     color: #000000;
                 }
                }
@@ -124,7 +131,7 @@
     .nav-icons{
         display: block;
         cursor: pointer;
-        color: var(--yellow-theme-main-color);
+        color: var(--yellow-theme-nav-background-color);
         padding-right: 20px;
     }
 }
