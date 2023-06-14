@@ -9,14 +9,14 @@ import {AiFillHtml5} from 'react-icons/ai'
 import {FaReact} from 'react-icons/fa'
 import './style.scss'
 
-const persnolDetail = [
-  {label:"Name",value:"Sejal Jaiswal"},
-  {label:"Email",value:"710sejal@gmail.com"},
-  {label:"Contact No",value:"+91 6261019377"}
-]
+
+
  
 const jobsummary = "Strong in design and integration with intuitive problem-solving skills. Proficient in HTML, CSS, JavaScript, React and Redux. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start a career as a web developer with a reputed firm driven by technology."
+
+
 export default function About() {
+
   return (
     <section id='about' className='about'>
       <PageHeaderContainer
@@ -33,22 +33,7 @@ export default function About() {
         <p>{jobsummary}</p>
       </Animate>
 
-      {/* <Animate play duration={1.5} delay={1} 
-      start={{transform:'translateX(500px)'}} 
-      end={{transform:'translatex(0px)'}} 
-      > 
-       <h3 className='persnolInformation' >Persnol Information</h3>
-       <ul>
-        {
-          persnolDetail.map((item,i) => (
-            <li key={i}>
-              <span className='title'>{item.label}</span>
-              <span className='value'>{item.value}</span>
-            </li>
-          ))
-        }
-       </ul>
-       </Animate> */}
+
         </div>
         <div className='about__content__servicesWrapper'>
 
@@ -75,4 +60,6 @@ export default function About() {
       </div>
     </section>
   )
+
 }
+

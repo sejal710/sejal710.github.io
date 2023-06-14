@@ -29,7 +29,7 @@ export default function Github() {
     <GitHubCalendar
     username="sejal710"
     blockSize={15}
-    color={'var(--yellow-theme-main-color)'}
+    color="yellow"
     blockMargin={5}
     /> 
     </div>

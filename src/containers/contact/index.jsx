@@ -113,7 +113,7 @@ export default function Contact() {
       <div className="contacts" >
       <h1 className="heading">Contact</h1>
       <div className="details">
-        <h3 className="ph-num">Contant Number - +91-6101937726</h3>
+        <h3 className="ph-num">Contant Number - +91 6261019377</h3>
         <h3 className="em-adr">Email Address - 710sejal@gmail.com</h3>
         <h3 className="address">Address - Indore, Madhya Pradesh</h3>
       </div>

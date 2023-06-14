@@ -3,8 +3,6 @@ import PageHeaderContainer from '../../components/pageHeaderContainer'
 import {SiSkillshare} from 'react-icons/si'
 import { SkillaData } from './utils'
 import { Animate } from 'react-simple-animate'
-// import {AnimateKeyframes} from 'react-simple-animate/dist/animateKeyframes'
-import { Line } from 'rc-progress';
 import './style.scss';
 
 export default function Skills() {

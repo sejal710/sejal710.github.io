@@ -121,6 +121,7 @@
         margin: auto;
         display: flex;
         flex-wrap: wrap;
+
         &__icons{
             width: 80px;
             height: 100%;
@@ -188,6 +189,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 5px 20px;
     border-radius: 15px;
+    color: black;
     cursor: pointer;
     background: var(--yellow-theme-sub-text-color);
     transition: .4s ease;

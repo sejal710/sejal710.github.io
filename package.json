@@ -18,6 +18,7 @@
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^8.5.5",
+    "gh-pages": "^5.0.0",
     "gsap-trial": "^3.11.4",
     "loaders.css": "^0.1.2",
     "rc-progress": "^3.4.1",

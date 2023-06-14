@@ -2,16 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 :root{
-// #1976D2
-//  #00B0FF
-// #1d1d1d #212121
-// #ffffffe4
   --yellow-theme-background-color :#ffffff ;
   --yellow-theme-main-color: #ffdd40;
   --yellow-theme-sub-text-color:#fff;
   --yellow-theme-nav-background-color:#181818;
 }
-// #ffffff
+
+
 *{
    box-sizing: border-box;
    padding: 0;
@@ -25,10 +22,11 @@ html{
 
 body{
   background: var(--yellow-theme-background-color );
-  // background-color: white;
   height: 100%;
 }
 
 #root{
   height: 100%;
 }
+
+
