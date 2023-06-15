@@ -55,7 +55,7 @@ const Project = [
   {id:6,name:"Sephora",
   image:Sephora,
   textTech:[[<FaHtml5/>,"HTML"],[<FaCss3Alt/>,"CSS"],[<TbBrandJavascript/>,"Javascript"]],
-  link:"https://merry-puppy-da377d.netlify.app/",
+  link:"https://sephora-vishwa.netlify.app/",
   git:"https://github.com/Vishwa9011/sephora",
   describe:"The best online beauty product website. It is an collaborative Project which is completed in 4-5 days.This application is fully responsive."
 },
