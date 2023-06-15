@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.8bf11e66.css",
-    "main.js": "/static/js/main.15d53a6a.js",
+    "main.js": "/static/js/main.3adfa066.js",
     "static/js/787.586b53ef.chunk.js": "/static/js/787.586b53ef.chunk.js",
     "static/media/Sephora.png": "/static/media/Sephora.52b3098237785dc9d53c.png",
     "static/media/Travel.png": "/static/media/Travel.b3bf47321d6625aca42a.png",
+    "static/media/Sejal_Jaiswal_Resume.pdf": "/static/media/Sejal_Jaiswal_Resume.de1587cc2286c3ac6362.pdf",
     "static/media/sejal.jpg": "/static/media/sejal.621918dabc1f2989429f.jpg",
-    "static/media/Sejal_Jaiswal_Resume.pdf": "/static/media/Sejal_Jaiswal_Resume.67ddaa943cf4f58a3374.pdf",
     "static/media/Codepan.png": "/static/media/Codepan.e1b01df09da4a82e1b1b.png",
     "static/media/Chating.png": "/static/media/Chating.7d87402112cca4dc5415.png",
     "index.html": "/index.html",
     "main.8bf11e66.css.map": "/static/css/main.8bf11e66.css.map",
-    "main.15d53a6a.js.map": "/static/js/main.15d53a6a.js.map",
+    "main.3adfa066.js.map": "/static/js/main.3adfa066.js.map",
     "787.586b53ef.chunk.js.map": "/static/js/787.586b53ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8bf11e66.css",
-    "static/js/main.15d53a6a.js"
+    "static/js/main.3adfa066.js"
   ]
 }
