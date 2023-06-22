@@ -22,6 +22,7 @@ function App() {
         // renderparticleJsinHomePage &&
          <Particle />
       }
+      <div className='pointer'></div>
       
       <Navbar/>
       <div className='App__main-page-content'>

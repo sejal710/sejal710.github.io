@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Animate} from 'react-simple-animate'
-import sejal from '../../Images/sejal.jpg'
+import sejal from '../../Images/sejal.png'
 import './style.scss'
 import resume from '../../Resume/Sejal_Jaiswal_Resume.pdf'
 

@@ -25,6 +25,7 @@ export default function Contact() {
             duration: 5000,
             isClosable: true,
         })
+        form.current.reset();
         }, (error) => {
           console.log(error.text);
           toast({
@@ -35,6 +36,7 @@ export default function Contact() {
               isClosable: true,
           })
         });
+      
 
       
     }
