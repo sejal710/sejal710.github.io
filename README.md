@@ -8,7 +8,7 @@ This is my personal portfolio website built using React.js. It showcases my proj
 - Contact form for visitors to reach out
 - Responsive design for optimal viewing on different devices
 
-  ## Technologies Used
+## Technologies Used
 
 - React.js
 - HTML5
@@ -16,14 +16,14 @@ This is my personal portfolio website built using React.js. It showcases my proj
 - JavaScript
 - tsparticles
 
-  ## Installation
+## Installation
 
 1. Clone the repository: https://github.com/sejal710/sejal710.github.io.git
 2. Install the dependencies: ``` npm install ```
 3. Start the development server: ``` npm start ```
 
 ## Demo
-[Download Demo Video](https://drive.google.com/uc?export=download&id=1SwFIafzXVva5vOSj6oiVZf802eg7i5eG)
+### [Download Demo Video](https://drive.google.com/uc?export=download&id=1SwFIafzXVva5vOSj6oiVZf802eg7i5eG)
 ![Screenshot (7)](https://github.com/sejal710/sejal710.github.io/assets/108399174/a0df4e8c-64b7-4861-bcd7-3b0f262736de)
 ![Screenshot (9)](https://github.com/sejal710/sejal710.github.io/assets/108399174/0475854d-5757-4d19-9bb4-f9c91f8ab538)
 ![Screenshot (10)](https://github.com/sejal710/sejal710.github.io/assets/108399174/e091f111-4029-4972-b48a-6f1cbb3f4abb)
