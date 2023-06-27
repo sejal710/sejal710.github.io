@@ -12,7 +12,7 @@ This is my personal portfolio website built using React.js. It showcases my proj
 
 - React.js
 - HTML5
-- CSS3
+- SCSS
 - JavaScript
 - tsparticles
 
