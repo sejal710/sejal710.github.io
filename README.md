@@ -1,4 +1,4 @@
-# Sejal Jaiswal Portfolio
+# Sejal_Jaiswal_Portfolio
 This is my personal portfolio website built using React.js. It showcases my projects, skills, and provides a way to contact me.
 
 ## Features
