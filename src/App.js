@@ -8,23 +8,25 @@ import Skills from './containers/skills/index'
 import Navbar from './components/navBar';
 import "aos/dist/aos.css";
 import Aos from "aos";
-import {Link} from '@chakra-ui/react'
+import { Link } from '@chakra-ui/react'
 import Particle from './utils.js/particle';
 import { useEffect } from 'react';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, [])
   return (
     <div className='App'>
+      <CustomCursor />
       {
         // renderparticleJsinHomePage &&
-         <Particle />
+        <Particle />
       }
       <div className='pointer'></div>
-      
-      <Navbar/>
+
+      <Navbar />
       <div className='App__main-page-content'>
         <Home />
         <About />
@@ -33,8 +35,8 @@ function App() {
         <Github />
         <Contact />
         <div className='footer'>
-        <p>💛💛Sejal Jaiswal💛💛</p>
-        </div> 
+          <p>💛💛Sejal Jaiswal💛💛</p>
+        </div>
         <Link className="home-goto_top" data-aos="fade-left" href="#home">
           <div class="loader">
             <span></span>
