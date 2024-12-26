@@ -4,67 +4,53 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/react": "^2.4.9",
-    "@emailjs/browser": "^3.10.0",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@fortawesome/free-brands-svg-icons": "^6.2.1",
-    "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "animation.css": "^0.1.0",
-    "aos": "^2.3.4",
-    "emailjs-com": "^3.2.0",
-    "framer-motion": "^8.5.5",
-    "gh-pages": "^5.0.0",
-    "gsap-trial": "^3.11.4",
-    "loaders.css": "^0.1.2",
-    "rc-progress": "^3.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-github-calendar": "^3.4.0",
-    "react-icons": "^4.7.1",
-    "react-leaflet": "^4.2.0",
-    "react-loaders": "^3.0.1",
-    "react-particles": "^2.7.1",
-    "react-router-dom": "^6.6.1",
-    "react-scripts": "5.0.1",
-    "react-simple-animate": "^3.5.2",
-    "react-slick": "^0.29.0",
-    "react-tooltip": "^5.7.4",
-    "react-tsparticles": "^2.7.1",
-    "react-vertical-timeline-component": "^3.6.0",
-    "sass": "^1.57.1",
-    "slick-carousel": "^1.8.1",
-    "tsparticles": "^2.7.1",
-    "web-vitals": "^2.1.4"
+    "colorthief": "^2.3.0",
+    "gh-pages": "^2.1.1",
+    "jest-canvas-mock": "^2.3.1",
+    "lottie-react": "^2.4.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-easy-emoji": "^1.8.1",
+    "react-headroom": "^3.0.0",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "^5.0.1",
+    "react-test-renderer": "^16.10.2",
+    "react-twitter-embed": "3.0.3",
+    "sass": "^1.32.8"
   },
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
+    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.3%",
+      "not ie 11",
       "not dead",
       "not op_mini all"
     ],
     "development": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all",
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "dotenv": "^8.2.0",
+    "prettier": "^2.3.1"
   }
 }
