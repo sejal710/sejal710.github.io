@@ -1,63 +1,51 @@
-import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import {openSource, socialMediaLinks} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
+import { socialMediaLinks } from "../../portfolio";
 import Loading from "../../containers/loading/Loading";
+
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
   );
-  const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
-  const [repo, setrepo] = useState([]);
-  // todo: remove useContex because is not supported
-  const {isDark} = useContext(StyleContext);
+  const [repos, setRepos] = useState([]);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    const getRepoData = () => {
-      fetch("/profile.json")
-        .then(result => {
-          if (result.ok) {
-            return result.json();
-          }
-          throw result;
-        })
-        .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
-        })
-        .catch(function (error) {
-          console.error(
-            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-          );
-          setrepoFunction("Error");
-        });
+    const fetchAllRepos = async () => {
+      try {
+        const response = await fetch(
+          "https://api.github.com/users/sejal710/repos?per_page=10&sort=updated"
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch repositories");
+        }
+        const data = await response.json();
+        setRepos(data);
+      } catch (err) {
+        console.error(
+          `${err} (because of this error, nothing is shown in the Projects section. Please check the GitHub username or API limits.)`
+        );
+        setError(true);
+      }
     };
-    getRepoData();
+    fetchAllRepos();
   }, []);
 
-  function setrepoFunction(array) {
-    setrepo(array);
-  }
-  if (
-    !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
-  ) {
+  if (!error && repos.length > 0) {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
           <h1 className="project-title">Open Source Projects</h1>
           <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
-                );
-              }
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
+            {repos.map((repo) => (
+              <GithubRepoCard
+                repo={repo}
+                key={repo.id}
+                isDark={false} // Remove or modify as needed
+              />
+            ))}
           </div>
           <Button
             text={"More Projects"}
@@ -69,6 +57,10 @@ export default function Projects() {
       </Suspense>
     );
   } else {
-    return <FailedLoading />;
+    return (
+      <div className="main" id="opensource">
+        <h1 className="project-title">No Repositories Found</h1>
+      </div>
+    );
   }
 }

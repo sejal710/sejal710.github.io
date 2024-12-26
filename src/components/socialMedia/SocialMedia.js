@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialMedia.scss";
-import {socialMediaLinks} from "../../portfolio";
+import { socialMediaLinks } from "../../portfolio";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -124,6 +124,17 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fab fa-kaggle"></i>
+          <span></span>
+        </a>
+      ) : null}
+      {socialMediaLinks.whatsapp ? (
+        <a
+          href={`https://api.whatsapp.com/send?phone=${socialMediaLinks.whatsapp}&text=Hello this is the starting message`}
+          className="icon-button whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
           <span></span>
         </a>
       ) : null}

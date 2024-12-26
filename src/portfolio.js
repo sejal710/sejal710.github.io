@@ -37,6 +37,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/sejal-jaiswal-645b4b217",
   gmail: "710sejal@gmail.com",
   "instagram": "https://www.instagram.com/sejal_jaiswal__",
+  "whatsapp": '916261019377',
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
   // medium: "https://medium.com/@saadpasta",
@@ -238,8 +239,8 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "I work on some live projects.",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
@@ -251,6 +252,39 @@ const bigProjects = {
           url: "http://saayahealth.com/"
         }
         //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
       ]
     },
     {
@@ -398,7 +432,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91 6261019377",
+  // number: "+91 6261019377",
   email_address: "710sejal@gmail.com"
 };
 
