@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.223cbb09.css",
-    "main.js": "/static/js/main.d7dad892.js",
-    "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
-    "static/js/64.a5d9d0c3.chunk.js": "/static/js/64.a5d9d0c3.chunk.js",
+    "main.js": "/static/js/main.47770470.js",
+    "static/css/141.a78981ef.chunk.css": "/static/css/141.a78981ef.chunk.css",
+    "static/js/141.44e00abd.chunk.js": "/static/js/141.44e00abd.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
-    "static/js/769.2becf00c.chunk.js": "/static/js/769.2becf00c.chunk.js",
+    "static/js/769.da3e4851.chunk.js": "/static/js/769.da3e4851.chunk.js",
     "static/media/stanfordLogo.png": "/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
     "static/media/harvardLogo.png": "/static/media/harvardLogo.542dab89bfb35b7f5c0d.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -24,14 +24,14 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.223cbb09.css.map": "/static/css/main.223cbb09.css.map",
-    "main.d7dad892.js.map": "/static/js/main.d7dad892.js.map",
-    "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
-    "64.a5d9d0c3.chunk.js.map": "/static/js/64.a5d9d0c3.chunk.js.map",
+    "main.47770470.js.map": "/static/js/main.47770470.js.map",
+    "141.a78981ef.chunk.css.map": "/static/css/141.a78981ef.chunk.css.map",
+    "141.44e00abd.chunk.js.map": "/static/js/141.44e00abd.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
-    "769.2becf00c.chunk.js.map": "/static/js/769.2becf00c.chunk.js.map"
+    "769.da3e4851.chunk.js.map": "/static/js/769.da3e4851.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.223cbb09.css",
-    "static/js/main.d7dad892.js"
+    "static/js/main.47770470.js"
   ]
 }
