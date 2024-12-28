@@ -1,9 +1,6 @@
 @import "../../_globalColor";
 
-/*React-headroom*/
-.headroom-wrapper {
-  max-height: 100px;
-}
+
 
 /* header */
 
@@ -25,6 +22,13 @@
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Ensure the header stays above other content */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 2px -2px #ffffff;
+
 }
 
 .header ul {
@@ -136,24 +140,24 @@
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu {
   max-height: 486px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon {
   background: transparent !important;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -163,18 +167,22 @@
   .header li {
     float: left;
   }
+
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .header .menu {
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }
 }
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;

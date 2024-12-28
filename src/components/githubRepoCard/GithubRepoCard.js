@@ -1,7 +1,6 @@
 import React from "react";
 import "./GithubRepoCard.scss";
 import { Fade } from "react-reveal";
-import { formatFileSizeDisplay } from "../../utils";
 
 export default function GithubRepoCard({ repo, isDark }) {
   function openUrlInNewTab(url, name) {
@@ -19,7 +18,7 @@ export default function GithubRepoCard({ repo, isDark }) {
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
           key={repo.id}
-          onClick={() => openUrlInNewTab(repo.deployments_url, repo.full_name)}
+          onClick={() => openUrlInNewTab(`${repo.owner.html_url}/${repo.name}`, repo.full_name)}
         >
           <div className="repo-name-div">
             <svg
@@ -35,7 +34,7 @@ export default function GithubRepoCard({ repo, isDark }) {
                 d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
               ></path>
             </svg>
-            <p className="repo-name">{repo.full_name}</p>
+            <p className="repo-name">{repo.name}</p>
           </div>
           <p className="repo-description">{repo.description}</p>
           <div className="repo-stats">

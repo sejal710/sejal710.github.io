@@ -16,7 +16,7 @@ export default function Projects() {
     const fetchAllRepos = async () => {
       try {
         const response = await fetch(
-          "https://api.github.com/users/sejal710/repos?per_page=10&sort=updated"
+          "https://api.github.com/users/sejal710/repos?per_page=5&sort=updated"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch repositories");
