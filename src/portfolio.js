@@ -157,7 +157,7 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Masai Banglore",
+      schoolName: "Masai Bengaluru",
       logo: require("./assets/images/masai.jpeg"),
       subHeader: "Full Stack Web Development (MERN)",
       duration: "September 2022 - June 2023",
@@ -327,7 +327,13 @@ const blogSection = {
       title: "What is DevOps",
       description:
         `DevOps is a combination of "Development" and "Operations" practices aimed at improving collaboration between software development (Dev) and IT operations (Ops) teams.`
-    }
+    },
+    {
+      url: "https://medium.com/@710sejal/what-is-software-development-lifecycle-sdlc-cb23f40ab8fa",
+      title: "What is Software Development Lifecycle (SDLC)?",
+      description:
+        `The Software Development Lifecycle (SDLC) is a structured process used to design, develop, test, deploy, and maintain software efficiently and effectively. It provides a systematic approach to ensure software is high-quality, meets user requirements, and is delivered on time and within budget.`
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
