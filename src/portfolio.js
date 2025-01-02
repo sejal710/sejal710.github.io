@@ -248,6 +248,19 @@ const bigProjects = {
       ],
 
     },
+    {
+      image: require("./assets/images/Dandy.png"),
+      projectName: "Dandy",
+      projectDesc: "Developed a full-stack solution with a React-based website, a React Native mobile app, and a Node.js backend. Deployed the project on an AWS EC2 instance, utilizing S3 buckets for image storage and AWS Textract to extract tables from images into JSON format. Implemented a CI/CD pipeline using a Bitbucket YAML configuration file for seamless deployment and continuous integration, ensuring efficient development and deployment workflows.",
+      footerLink: [
+        // {
+        //   name: "Visit",
+        //   url: "http://saayahealth.com/"
+        // }
+        //  you can add extra buttons here.
+      ],
+
+    },
 
   ],
   display: true // Set false to hide this section, defaults to true
@@ -334,6 +347,30 @@ const blogSection = {
       description:
         `The Software Development Lifecycle (SDLC) is a structured process used to design, develop, test, deploy, and maintain software efficiently and effectively. It provides a systematic approach to ensure software is high-quality, meets user requirements, and is delivered on time and within budget.`
     },
+    {
+      url: "https://medium.com/@710sejal/what-is-virtual-machine-231bfbbf49dc",
+      title: "What is Virtual Machine?",
+      description:
+        `A Virtual Machine (VM) is a software-based emulation of a physical computer. It runs an operating system (OS) and applications just like a physical machine, but it is hosted on a physical computer or server. Virtual machines allow multiple operating systems to run on a single physical system, enabling better utilization of hardware resources.`
+    },
+    {
+      url: "https://medium.com/@710sejal/understanding-linux-and-shell-scripting-882fa39dae06",
+      title: "Understanding Linux and Shell Scripting",
+      description:
+        `Linux and shell scripting are essential tools for developers and system administrators. They simplify complex tasks, enhance efficiency, and provide powerful solutions for system management.`
+    },
+    {
+      url: "https://medium.com/@710sejal/understanding-linux-and-shell-scripting-882fa39dae06",
+      title: "Live Tracking AWS Projects Using Shell Scripting",
+      description:
+        `We will walk you through creating a shell script to live track your AWS project, focusing on EC2 instances and S3 buckets.`
+    },
+    {
+      url: "https://medium.com/@710sejal/how-to-integrate-the-github-api-into-your-project-ce9c2a8bff53",
+      title: "How to Integrate the GitHub API into Your Project",
+      description:
+        `The GitHub API is a powerful tool that allows developers to interact with GitHub programmatically. From fetching user data to automating workflows, it simplifies tasks and enhances functionality`
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
